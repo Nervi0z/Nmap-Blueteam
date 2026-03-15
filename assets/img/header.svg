@@ -1,0 +1,170 @@
+<svg viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" width="900" height="240">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020810"/><stop offset="100%" stop-color="#030d1a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow-title"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow-port"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="clip"><rect width="900" height="240"/></clipPath>
+  </defs>
+  <style>
+    .grid{stroke:#0a1628;stroke-width:.5;fill:none}
+    .corner{stroke:#7C3AED;stroke-width:1.5;fill:none}
+    .c1{stroke-dasharray:22;stroke-dashoffset:22;animation:dc .35s ease forwards .05s}
+    .c2{stroke-dasharray:22;stroke-dashoffset:22;animation:dc .35s ease forwards .15s}
+    .c3{stroke-dasharray:22;stroke-dashoffset:22;animation:dc .35s ease forwards .25s}
+    .c4{stroke-dasharray:22;stroke-dashoffset:22;animation:dc .35s ease forwards .35s}
+    .topline{stroke-dasharray:900;stroke-dashoffset:900;animation:dl 1s ease forwards .4s}
+    .scanline{animation:scan 4s linear infinite 2s}
+    .n0{opacity:0;animation:pop .05s forwards .5s}
+    .n1{opacity:0;animation:pop .05s forwards .65s}
+    .n2{opacity:0;animation:pop .05s forwards .78s}
+    .n3{opacity:0;animation:pop .05s forwards .91s}
+    .n4{opacity:0;animation:pop .05s forwards 1.04s}
+    .n5{opacity:0;animation:pop .05s forwards 1.17s}
+    .n6{opacity:0;animation:pop .05s forwards 1.3s}
+    .n7{opacity:0;animation:pop .05s forwards 1.43s}
+    .n8{opacity:0;animation:pop .05s forwards 1.56s}
+    .title{font-family:'JetBrains Mono','Courier New',monospace;font-weight:700;font-size:34px;fill:url(#titleGrad);filter:url(#glow-title);opacity:0;animation:fi .6s ease forwards 1.65s}
+    .sub{font-family:'JetBrains Mono','Courier New',monospace;font-size:11px;fill:#94A3B8;opacity:0;animation:fi .5s ease forwards 1.9s}
+    .tag{opacity:0}
+    .tg1{animation:tp .3s ease forwards 2.1s}.tg2{animation:tp .3s ease forwards 2.25s}
+    .tg3{animation:tp .3s ease forwards 2.4s}.tg4{animation:tp .3s ease forwards 2.55s}
+    .tg5{animation:tp .3s ease forwards 2.7s}
+    .rpanel{opacity:0;animation:fi .5s ease forwards 2.8s}
+    .rpulse{animation:rpulse 3s ease-in-out infinite 3s}
+    .pt{animation:fl 3.5s ease-in-out infinite;opacity:.45}
+    .p1{animation-delay:0s}.p2{animation-delay:.8s}.p3{animation-delay:1.6s}
+    .p4{animation-delay:2.4s}.p5{animation-delay:.4s}.p6{animation-delay:1.2s}
+    .cursor{animation:blink 1s step-end infinite 1.7s}
+    @keyframes dc{to{stroke-dashoffset:0}}
+    @keyframes dl{to{stroke-dashoffset:0}}
+    @keyframes pop{to{opacity:1}}
+    @keyframes fi{to{opacity:1}}
+    @keyframes tp{0%{opacity:0;transform:translateY(5px)}100%{opacity:1;transform:translateY(0)}}
+    @keyframes scan{0%{transform:translateY(-40px)}100%{transform:translateY(280px)}}
+    @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes rpulse{0%,100%{opacity:.7}50%{opacity:1}}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+  </style>
+  <g clip-path="url(#clip)">
+    <rect width="900" height="240" fill="url(#bg)"/>
+    <line class="grid" x1="0" y1="30"  x2="900" y2="30"/><line class="grid" x1="0" y1="60"  x2="900" y2="60"/>
+    <line class="grid" x1="0" y1="90"  x2="900" y2="90"/><line class="grid" x1="0" y1="120" x2="900" y2="120"/>
+    <line class="grid" x1="0" y1="150" x2="900" y2="150"/><line class="grid" x1="0" y1="180" x2="900" y2="180"/>
+    <line class="grid" x1="0" y1="210" x2="900" y2="210"/>
+    <line class="grid" x1="90"  y1="0" x2="90"  y2="240"/><line class="grid" x1="180" y1="0" x2="180" y2="240"/>
+    <line class="grid" x1="270" y1="0" x2="270" y2="240"/><line class="grid" x1="360" y1="0" x2="360" y2="240"/>
+    <line class="grid" x1="450" y1="0" x2="450" y2="240"/><line class="grid" x1="540" y1="0" x2="540" y2="240"/>
+    <line class="grid" x1="630" y1="0" x2="630" y2="240"/><line class="grid" x1="720" y1="0" x2="720" y2="240"/>
+    <line class="grid" x1="810" y1="0" x2="810" y2="240"/>
+    <rect class="scanline" x="0" y="0" width="900" height="35" fill="url(#scanGrad)"/>
+    <line class="topline" x1="22" y1="9" x2="878" y2="9" stroke="url(#accentGrad)" stroke-width="1.5" fill="none"/>
+    <path class="corner c1" d="M22 32 L22 20 L34 20"/>
+    <path class="corner c2" d="M878 32 L878 20 L866 20"/>
+    <path class="corner c3" d="M22 208 L22 220 L34 220"/>
+    <path class="corner c4" d="M878 208 L878 220 L866 220"/>
+    <circle class="pt p1" cx="12" cy="55"  r="1.5" fill="#7C3AED"/>
+    <circle class="pt p2" cx="8"  cy="100" r="1"   fill="#06B6D4"/>
+    <circle class="pt p3" cx="15" cy="148" r="1.5" fill="#7C3AED"/>
+    <circle class="pt p4" cx="7"  cy="192" r="1"   fill="#06B6D4"/>
+    <circle class="pt p5" cx="18" cy="76"  r="1"   fill="#06B6D4"/>
+    <circle class="pt p6" cx="11" cy="170" r="1.5" fill="#7C3AED"/>
+    <circle class="pt p2" cx="888" cy="50"  r="1.5" fill="#7C3AED"/>
+    <circle class="pt p3" cx="892" cy="95"  r="1"   fill="#06B6D4"/>
+    <circle class="pt p1" cx="885" cy="145" r="1.5" fill="#7C3AED"/>
+    <circle class="pt p4" cx="893" cy="190" r="1"   fill="#06B6D4"/>
+    <circle class="pt p6" cx="882" cy="72"  r="1"   fill="#06B6D4"/>
+    <circle class="pt p5" cx="889" cy="168" r="1.5" fill="#7C3AED"/>
+
+    <!-- NMAP output -->
+    <text class="n0" font-family="'JetBrains Mono','Courier New',monospace" font-size="9.5px" x="40" y="46">
+      <tspan fill="#22C55E">$</tspan><tspan fill="#94A3B8" dx="5">sudo nmap</tspan>
+      <tspan fill="#06B6D4" dx="5">-sS -sV -sC -O</tspan>
+      <tspan fill="#EAB308" dx="5">-T4</tspan>
+      <tspan fill="#94A3B8" dx="5">-p 22,80,443,3389</tspan>
+      <tspan fill="#E6EDF3" dx="5">192.168.1.0/24</tspan>
+    </text>
+    <text class="n1" font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" fill="#555" x="40" y="60">Starting Nmap 7.94 ( https://nmap.org ) at 2024-11-15 09:14 CET</text>
+    <text class="n2" font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" x="40" y="74">
+      <tspan fill="#7C3AED">Nmap scan report for</tspan>
+      <tspan fill="#E6EDF3" dx="5">192.168.1.50</tspan>
+      <tspan fill="#555" dx="5">(web-server-01.local)</tspan>
+    </text>
+    <text class="n3" font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" fill="#555" x="40" y="86">Host is up (0.00042s latency). MAC Address: 00:1A:2B:3C:4D:5E (Dell Inc.)</text>
+    <text class="n4" font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" x="40" y="100">
+      <tspan fill="#94A3B8">PORT</tspan><tspan fill="#94A3B8" dx="24">STATE</tspan>
+      <tspan fill="#94A3B8" dx="20">SERVICE</tspan><tspan fill="#94A3B8" dx="36">VERSION</tspan>
+    </text>
+    <line class="n4" x1="40" y1="104" x2="580" y2="104" stroke="#0d1f3a" stroke-width=".8"/>
+    <text class="n5" font-family="'JetBrains Mono','Courier New',monospace" font-size="9.5px" x="40" y="117">
+      <tspan fill="#E6EDF3">22/tcp</tspan>
+      <tspan fill="#22C55E" dx="12" font-weight="700" filter="url(#glow-port)">open</tspan>
+      <tspan fill="#94A3B8" dx="14">ssh</tspan>
+      <tspan fill="#555" dx="30">OpenSSH 8.9p1 Ubuntu 3ubuntu0.6</tspan>
+    </text>
+    <text class="n6" font-family="'JetBrains Mono','Courier New',monospace" font-size="9.5px" x="40" y="130">
+      <tspan fill="#E6EDF3">80/tcp</tspan>
+      <tspan fill="#22C55E" dx="12" font-weight="700" filter="url(#glow-port)">open</tspan>
+      <tspan fill="#94A3B8" dx="14">http</tspan>
+      <tspan fill="#555" dx="24">Apache httpd 2.4.52 (Ubuntu)</tspan>
+    </text>
+    <text class="n7" font-family="'JetBrains Mono','Courier New',monospace" font-size="9.5px" x="40" y="143">
+      <tspan fill="#E6EDF3">443/tcp</tspan>
+      <tspan fill="#22C55E" dx="6" font-weight="700" filter="url(#glow-port)">open</tspan>
+      <tspan fill="#94A3B8" dx="14">https</tspan>
+      <tspan fill="#555" dx="18">Apache httpd 2.4.52 · TLSv1.3</tspan>
+    </text>
+    <text class="n8" font-family="'JetBrains Mono','Courier New',monospace" font-size="9.5px" x="40" y="156">
+      <tspan fill="#E6EDF3">3389/tcp</tspan>
+      <tspan fill="#EAB308" dx="2" font-weight="700">filtered</tspan>
+      <tspan fill="#94A3B8" dx="4">ms-wbt-server</tspan>
+      <tspan fill="#555" dx="8">firewall detected</tspan>
+    </text>
+    <line x1="40" y1="163" x2="580" y2="163" stroke="#0d1f3a" stroke-width=".8" opacity="0" style="animation:pop .05s forwards 1.57s"/>
+
+    <text class="title" x="40" y="196">nmap-blueteam</text>
+    <text class="sub" x="42" y="213">host discovery · port scanning · service detection · NSE · Blue Team workflows</text>
+
+    <g class="tag tg1"><rect x="40" y="222" width="48" height="16" rx="3" fill="none" stroke="#7C3AED" stroke-width="1"/><circle cx="50" cy="230" r="3" fill="#7C3AED"/><text font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" x="57" y="234" fill="#E6EDF3">Nmap</text></g>
+    <g class="tag tg2"><rect x="96" y="222" width="72" height="16" rx="3" fill="none" stroke="#06B6D4" stroke-width="1"/><circle cx="106" cy="230" r="3" fill="#06B6D4"/><text font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" x="113" y="234" fill="#E6EDF3">Blue Team</text></g>
+    <g class="tag tg3"><rect x="176" y="222" width="46" height="16" rx="3" fill="none" stroke="#22C55E" stroke-width="1"/><circle cx="186" cy="230" r="3" fill="#22C55E"/><text font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" x="193" y="234" fill="#E6EDF3">SOC</text></g>
+    <g class="tag tg4"><rect x="230" y="222" width="64" height="16" rx="3" fill="none" stroke="#EAB308" stroke-width="1"/><circle cx="240" cy="230" r="3" fill="#EAB308"/><text font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" x="247" y="234" fill="#E6EDF3">Recon</text></g>
+    <g class="tag tg5"><rect x="302" y="222" width="76" height="16" rx="3" fill="none" stroke="#7C3AED" stroke-width="1"/><circle cx="312" cy="230" r="3" fill="#7C3AED"/><text font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" x="319" y="234" fill="#E6EDF3">Junior</text></g>
+    <rect class="cursor" x="42" y="232" width="7" height="2" fill="#7C3AED" opacity=".8"/>
+
+    <!-- RIGHT PANEL -->
+    <g class="rpanel rpulse">
+      <rect x="688" y="36" width="182" height="170" rx="4" fill="#060f1e" stroke="#7C3AED" stroke-width="1"/>
+      <rect x="688" y="36" width="182" height="22" rx="4" fill="#0d1f3a"/>
+      <rect x="688" y="48" width="182" height="10" fill="#0d1f3a"/>
+      <circle cx="703" cy="47" r="4" fill="#7C3AED"/>
+      <text font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" fill="#E6EDF3" x="713" y="51">PORT STATES</text>
+      <line x1="698" y1="66" x2="860" y2="66" stroke="#0a1628" stroke-width="1"/>
+      <circle cx="704" cy="80" r="5" fill="#22C55E" filter="url(#glow-port)"/>
+      <text font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" fill="#22C55E" x="714" y="84" font-weight="700">open</text>
+      <text font-family="'JetBrains Mono','Courier New',monospace" font-size="8px" fill="#94A3B8" x="714" y="95">service listening · investigate</text>
+      <circle cx="704" cy="112" r="5" fill="#EF4444"/>
+      <text font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" fill="#EF4444" x="714" y="116" font-weight="700">closed</text>
+      <text font-family="'JetBrains Mono','Courier New',monospace" font-size="8px" fill="#94A3B8" x="714" y="127">no service · host is up</text>
+      <circle cx="704" cy="144" r="5" fill="#EAB308"/>
+      <text font-family="'JetBrains Mono','Courier New',monospace" font-size="9px" fill="#EAB308" x="714" y="148" font-weight="700">filtered</text>
+      <text font-family="'JetBrains Mono','Courier New',monospace" font-size="8px" fill="#94A3B8" x="714" y="159">firewall blocking · uncertain</text>
+      <line x1="698" y1="168" x2="860" y2="168" stroke="#0a1628" stroke-width="1"/>
+      <text font-family="'JetBrains Mono','Courier New',monospace" font-size="8px" fill="#94A3B8" x="698" y="180">open → version → CVE check</text>
+      <text font-family="'JetBrains Mono','Courier New',monospace" font-size="8px" fill="#7C3AED" x="698" y="192">compare with asset inventory</text>
+      <text font-family="'JetBrains Mono','Courier New',monospace" font-size="8px" fill="#94A3B8" x="698" y="202">unexpected = investigate</text>
+    </g>
+  </g>
+</svg>
